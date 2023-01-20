@@ -1,0 +1,144 @@
+.slider {
+  overflow: hidden;
+
+  @include vp-1199 {
+    margin: 0 56px;
+  }
+
+  @include vp-767 {
+    margin: 0 32px;
+  }
+}
+
+.slider__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__wrapper.no-js {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.slider__wrapper.no-js .slider__img-overlay {
+  z-index: 5;
+}
+
+.slider__wrapper.no-js .slider__name-trainer {
+  z-index: -1;
+}
+
+.slider__wrapper.no-js .slider__image {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.slider__trainer {
+  position: relative;
+
+  &:hover .slider__img-overlay,
+  &:focus-within .slider__img-overlay {
+    z-index: 5;
+  }
+
+  &:hover .slider__name-trainer,
+  &:focus-within .slider__name-trainer {
+    z-index: -1;
+  }
+
+  &:hover .slider__image,
+  &:focus-within .slider__image {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+
+.slider__image {
+  width: 100%;
+
+  @include vp-1199 {
+    aspect-ratio: 268/294;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 226/274;
+  }
+}
+
+.slider__name-trainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  margin: 0 0 22px;
+
+  @include fonts(18px, 27px, 700, $color-default-white);
+}
+
+.slider__img-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 51px 30px 36px;
+  z-index: -1;
+  color: $color-default-white;
+  background-color: $color-pearl-night-opacity;
+
+  @include vp-767 {
+    padding: 40px 10px 35px;
+  }
+}
+
+.slider__img-overlay ul {
+  margin-left: 22px;
+  padding-left: 18px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style-position: outside;
+  list-style-type: disc;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $color-default-white;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-saphire;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-chambray;
+  }
+}
+
+.slider__img-overlay li {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.slider__img-overlay h3 {
+  margin: 0;
+
+  @include fonts(18px, 26px, 700, $color-default-white);
+}
+
+.slider__img-overlay span {
+  margin-bottom: 31px;
+  color: $color-spindle;
+}

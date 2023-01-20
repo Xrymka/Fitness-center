@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+  max-width: 100px;
+  min-width: 99px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  height: fit-content;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

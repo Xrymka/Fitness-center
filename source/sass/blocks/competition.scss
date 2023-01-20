@@ -1,0 +1,169 @@
+.competition {
+  margin-bottom: 106px;
+
+  @include vp-1199 {
+    margin-bottom: 101px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 64px;
+  }
+}
+
+.competition__container {
+  display: grid;
+  grid-template-columns: 500px minmax(500px, 660px);
+
+  @include vp-1199 {
+    grid-template-columns: minmax(292px, 1fr) 386px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+  }
+}
+
+.competition__content {
+  display: grid;
+  grid-template-columns: 201px 95px;
+  grid-template-rows: min-content min-content min-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  padding: 81px 77px 84px;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+
+  @include vp-1199 {
+    grid-template-columns: 117px 56px;
+    row-gap: 0;
+    column-gap: 29px;
+    padding: 46px 45px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 50px;
+    row-gap: 3px;
+  }
+}
+
+.competition__title {
+  margin: 5px 0 0 14px;
+
+  @include fonts(82px, 79px, 600, $color-default-white, $ff-secondary);
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-top: 5px;
+    margin-left: 7px;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+  }
+}
+
+.competition__description {
+  grid-column: 1/-1;
+  margin: 0 0 24px 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    margin-top: -2px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.competition__btn {
+  grid-column: 1/-1;
+  padding: 25px 10px;
+
+  @include fonts(12px, 14px, 700, $color-default-white);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: 4px solid $color-default-white;
+
+  @include vp-1199 {
+    padding: 12px 10px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    border-width: 2px;
+  }
+}
+
+.competition__list {
+  margin: 0;
+  justify-self: baseline;
+}
+
+.competition__item-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.competition__item-details {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin: 0;
+
+  @include fonts(40px, 45px, 700, $color-default-white);
+  border-top: 1px solid $color-default-white;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &:last-of-type {
+    @include vp-767 {
+      line-height: 30px;
+    }
+  }
+}
+
+.competition__item-details span {
+  width: 37px;
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 17px;
+
+  @include vp-1199 {
+    margin-left: 3px;
+    width: 29px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+.competition__img {
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-767 {
+    aspect-ratio: 290/292;
+  }
+}

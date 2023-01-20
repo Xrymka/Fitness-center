@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
@@ -16,8 +17,9 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-main;
+  color: $color-saphire;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +37,7 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-saphire;
   text-decoration: none;
 }
 

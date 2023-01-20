@@ -1,0 +1,157 @@
+.intro {
+  width: 100%;
+  margin-top: -60px;
+  padding-bottom: 51px;
+
+  @include vp-1199 {
+    margin-top: 0;
+    padding-bottom: 80px;
+  }
+}
+
+.intro__inner {
+  display: flex;
+  gap: 63px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+  }
+}
+
+.intro__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 397px;
+  column-gap: 18px;
+  row-gap: 25px;
+  grid-template-areas: "list city"
+    "list gym"
+    ". button";
+  margin-bottom: 42px;
+
+  @include vp-1199 {
+    max-width: 325px;
+    margin-bottom: 0;
+    row-gap: 10px;
+    column-gap: 21px;
+  }
+
+  @include vp-767 {
+    column-gap: 0;
+    row-gap: 13px;
+    grid-template-areas: "list city"
+      "list gym"
+      "button button";
+    max-width: none;
+  }
+}
+
+.intro__list {
+  grid-area: list;
+  align-self: flex-end;
+  margin: 0 0 35px 0;
+  padding: 0;
+  text-align: end;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+  list-style: none;
+
+  @include vp-1199 {
+    margin-bottom: 48px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 32px;
+    margin-right: -14px;
+  }
+}
+
+.intro__subtitle {
+  grid-area: city;
+  margin: 115px 51px 0 0;
+  text-align: right;
+
+  @include fonts(42px, 57.6px, 600, $color-default-white, $ff-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+
+  @include vp-1199 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1.02px;
+    margin-top: 50px;
+    margin-right: 6px;
+  }
+
+  @include vp-767 {
+    margin-top: 56px;
+    margin-right: 4px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.intro__title {
+  grid-area: gym;
+  margin: -15px 0 0 0;
+  text-align: right;
+
+  @include fonts(92px, 110.4px, 700, $color-default-white, $ff-secondary);
+  text-transform: uppercase;
+  letter-spacing: 4.6px;
+
+  @include vp-1199 {
+    margin-top: -30px;
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: none;
+    letter-spacing: 3px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+}
+
+.intro__btn {
+  grid-area: button;
+  min-width: 234px;
+  min-height: 59px;
+  margin-top: 25px;
+  align-self: end;
+  justify-self: end;
+
+  @include fonts(12px, 14px, 700, $color-default-white);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: 4px solid $color-default-white;
+
+  @include vp-1199 {
+    min-width: 183px;
+    min-height: 57px;
+    margin-top: 0;
+    align-self: start;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 59px;
+    margin-top: 10px;
+  }
+}
+
+.intro__img {
+  @include vp-1199 {
+    aspect-ratio: 324/390;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

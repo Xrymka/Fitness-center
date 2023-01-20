@@ -1,0 +1,111 @@
+.card {
+  padding: 56px 30px;
+  box-sizing: border-box;
+  background-color: $color-default-white;
+  border: 7px solid $color-default-white;
+  transition: border-image $trans-default;
+
+  @include vp-767 {
+    padding-top: 44px;
+  }
+
+  &:hover {
+    border-image: $red-to-blue-deg 1;
+
+    a {
+      color: $color-default-white;
+      border: transparent;
+      background-image: $red-to-blue;
+    }
+  }
+}
+
+.card h3 {
+  margin: 0 0 11px 0;
+
+  @include fonts(26px, 28.6px, 700);
+
+  @include vp-767 {
+    margin-bottom: 9px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.card p {
+  margin: 0 0 11px 0;
+}
+
+.card div {
+  position: relative;
+  margin-bottom: 48px;
+
+  @include vp-767 {
+    margin-bottom: 44px;
+  }
+}
+
+.card span {
+  @include fonts(100px, 150px, 700, $color-whisper);
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.card b {
+  position: absolute;
+  left: 42%;
+  bottom: 7px;
+  transform: translateX(-50%);
+
+  @include fonts(60px, 90px, 700, $color-egyptian-blue);
+
+  @include vp-1199 {
+    left: 44%;
+  }
+
+  @include vp-767 {
+    left: 43%;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  &::after {
+    position: absolute;
+    right: -37%;
+    bottom: 25px;
+    content: "";
+    width: 32px;
+    height: 40px;
+    background: url("../../img/svg/icon-ruble.svg") no-repeat center bottom;
+
+    @include vp-767 {
+      right: -39%;
+      bottom: 18px;
+      background-size: 24px 33px;
+    }
+  }
+}
+
+.card a {
+  padding: 24px 44px;
+
+  @include fonts(12px, 14px, 700);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border: 2px solid $color-saphire;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    color: $color-default-white;
+    outline: none;
+    border: transparent;
+    background-image: $red-to-blue;
+  }
+}
