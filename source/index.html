@@ -26,8 +26,8 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div class="wrapper">
-      <div class="wrapper__container">
+    <div class="page">
+      <div class="page__container">
         <!-- header -->
         <header class="header">
           <div class="container header__container">
@@ -58,7 +58,7 @@
                 <a class="intro__btn btn" href="#subscription">Купить абонемент</a>
               </div>
               <picture>
-                <source type="image/webp" srcset="img/main-block.webp, img/main-block@2x.webp 2x" width="500" height="556">
+                <source type="image/webp" srcset="img/main-block.webp, img/main-block@2x.webp 2x">
                 <img class="intro__img" src="img/main-block.jpg" srcset="img/main-block@2x.jpg" alt="Мужчина в футболке со знаком супермена." width="500" height="556">
               </picture>
             </div>
@@ -78,21 +78,19 @@
             </div>
             <div class="about__media">
               <picture>
-                <source type="image/webp" srcset="img/gym-2.webp, img/gym-2@2x.webp 2x" width="660" height="401">
-                <img class="about__image" src="img/gym-2.jpg" srcset="img/gym-2@2x.jpg" alt="Фото тренажёрного зала."
-                  width="660" height="401" loading="lazy">
+                <source type="image/webp" srcset="img/gym-2.webp, img/gym-2@2x.webp 2x">
+                <img class="about__image" src="img/gym-2.jpg" srcset="img/gym-2@2x.jpg" alt="Фото тренажёрного зала." width="660" height="401" loading="lazy">
               </picture>
               <div class="about__video video">
                 <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
                   <picture>
-                    <source type="image/webp" srcset="img/gym-1.webp, img/gym-1@2x.webp 2x" width="364" height="228">
-                    <img class="video__image" src="img/gym-1.jpg" srcset="img/gym-1@2x.jpg"
-                      alt="Фото тренажёрного зала." width="364" height="228" loading="lazy">
+                    <source type="image/webp" srcset="img/gym-1.webp, img/gym-1@2x.webp 2x">
+                    <img class="video__image" src="img/gym-1.jpg" srcset="img/gym-1@2x.jpg" alt="Фото тренажёрного зала." width="364" height="228" loading="lazy">
                   </picture>
                 </a>
-                <button class="video__btn" type="button" disabled>
+                <a class="video__btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
                   <span class="visually-hidden">Воспроизвести видео</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -230,7 +228,7 @@
               <a class="competition__btn btn" href="#">Заполнить заявку</a>
             </div>
             <picture>
-              <source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
               <img class="competition__img" src="img/promo.jpg" srcset="img/promo@2x.jpg" alt="мужчина отжимается." width="660" height="500" loading="lazy">
             </picture>
           </div>
@@ -246,7 +244,7 @@
                 <!-- Slides -->
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/pavlova.webp, img/pavlova@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/pavlova.webp, img/pavlova@2x.webp 2x">
                     <img class="slider__image" src="img/pavlova.jpg" srcset="img/pavlova@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Анна Павлова</p>
@@ -262,7 +260,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/lavrov.webp, img/lavrov@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/lavrov.webp, img/lavrov@2x.webp 2x">
                     <img class="slider__image" src="img/lavrov.jpg" srcset="img/lavrov@2x.jpg" alt="Тренер Алексей Лавров." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Алексей Лавров</p>
@@ -278,7 +276,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/pashkov.webp, img/pashkov@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/pashkov.webp, img/pashkov@2x.webp 2x">
                     <img class="slider__image" src="img/pashkov.jpg" srcset="img/pashkov@2x.jpg" alt="Тренер Александр Пашков." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Александр Пашков</p>
@@ -294,7 +292,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/ketova.webp, img/ketova@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/ketova.webp, img/ketova@2x.webp 2x">
                     <img class="slider__image" src="img/ketova.jpg" srcset="img/ketova@2x.jpg" alt="Тренер Мария Кетова." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Мария Кетова</p>
@@ -310,7 +308,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/pavlova.webp, img/pavlova@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/pavlova.webp, img/pavlova@2x.webp 2x">
                     <img class="slider__image" src="img/pavlova.jpg" srcset="img/pavlova@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Анна Павлова</p>
@@ -326,7 +324,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/lavrov.webp, img/lavrov@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/lavrov.webp, img/lavrov@2x.webp 2x">
                     <img class="slider__image" src="img/lavrov.jpg" srcset="img/lavrov@2x.jpg" alt="Тренер Алексей Лавров." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Алексей Лавров</p>
@@ -342,9 +340,8 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/pashkov.webp, img/pashkov@2x.webp 2x" width="260" height="294">
-                    <img class="slider__image" src="img/pashkov.jpg" srcset="img/pashkov@2x.jpg"
-                      alt="Тренер Александр Пашков." width="260" height="294" loading="lazy">
+                    <source type="image/webp" srcset="img/pashkov.webp, img/pashkov@2x.webp 2x">
+                    <img class="slider__image" src="img/pashkov.jpg" srcset="img/pashkov@2x.jpg" alt="Тренер Александр Пашков." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Александр Пашков</p>
                   <div class="slider__img-overlay">
@@ -359,7 +356,7 @@
                 </li>
                 <li class="swiper-slide slider__trainer" tabindex="0">
                   <picture>
-                    <source type="image/webp" srcset="img/ketova.webp, img/ketova@2x.webp 2x" width="260" height="294">
+                    <source type="image/webp" srcset="img/ketova.webp, img/ketova@2x.webp 2x">
                     <img class="slider__image" src="img/ketova.jpg" srcset="img/ketova@2x.jpg" alt="Тренер Мария Кетова." width="260" height="294" loading="lazy">
                   </picture>
                   <p class="slider__name-trainer">Мария Кетова</p>
@@ -463,9 +460,8 @@
                 </div>
                 <div class="action-main__img-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="img/offer.webp, img/offer@2x.webp 2x" width="280" height="462">
-                    <img src="img/offer.jpg" srcset="img/offer@2x.jpg"
-                      alt="Девушка в спортивном костюме стоит на фоне голубого неба." width="280" height="462" loading="lazy">
+                    <source type="image/webp" srcset="img/offer.webp, img/offer@2x.webp 2x">
+                    <img src="img/offer.jpg" srcset="img/offer@2x.jpg" alt="Девушка в спортивном костюме стоит на фоне голубого неба." width="280" height="462" loading="lazy">
                   </picture>
                 </div>
               </article>
@@ -499,9 +495,8 @@
                   <blockquote class="reviews__card review-card">
                     <div>
                       <picture>
-                        <source type="image/webp" srcset="img/orlova.webp, img/orlova@2x.webp 2x" width="80" height="80">
-                        <img src="img/orlova.png" srcset="img/orlova@2x.png" alt="Анна Орлова."
-                          width="80" height="80" loading="lazy">
+                        <source type="image/webp" srcset="img/orlova.webp, img/orlova@2x.webp 2x">
+                        <img src="img/orlova.png" srcset="img/orlova@2x.png" alt="Анна Орлова." width="80" height="80" loading="lazy">
                       </picture>
                     </div>
                     <h3>Анна Орлова</h3>
@@ -512,9 +507,8 @@
                   <blockquote class="reviews__card review-card">
                     <div>
                       <picture>
-                        <source type="image/webp" srcset="img/orlova.webp, img/orlova@2x.webp 2x" width="80" height="80">
-                        <img src="img/orlova.png" srcset="img/orlova@2x.png" alt="Анна Орлова."
-                          width="80" height="80">
+                        <source type="image/webp" srcset="img/orlova.webp, img/orlova@2x.webp 2x">
+                        <img src="img/orlova.png" srcset="img/orlova@2x.png" alt="Анна Орлова." width="80" height="80">
                       </picture>
                     </div>
                     <h3>Анна Орлова</h3>
@@ -537,7 +531,7 @@
           </div>
         </section>
         <!-- /reviews -->
-        <div class="wrapper__inner">
+        <div class="page__inner">
           <div class="container container--inner">
             <!-- free-class -->
             <section class="free-class">

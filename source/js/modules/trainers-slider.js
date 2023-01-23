@@ -1,7 +1,7 @@
 const initSwiperTrainer = (swiper) => {
+
   if (swiper) {
-    // eslint-disable-next-line
-    new Swiper('[data-slider="trainers-slider"]', {
+    const swiperTrainers = new Swiper('[data-slider="trainers-slider"]', {
       navigation: {
         nextEl: '.trainers__button--next',
         prevEl: '.trainers__button--prev',
@@ -36,6 +36,8 @@ const initSwiperTrainer = (swiper) => {
         },
       },
     });
+
+    swiperTrainers.init();
   }
 };
 

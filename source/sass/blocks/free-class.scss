@@ -35,7 +35,7 @@
 .free-class__form {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 28px 30px;
+  gap: 30px 30px;
 
   @include vp-1199 {
     gap: 29px 60px;

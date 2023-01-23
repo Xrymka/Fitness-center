@@ -1,7 +1,6 @@
 const initSwiperReviews = (swiper) => {
   if (swiper) {
-    // eslint-disable-next-line
-    new Swiper('[data-slider="reviews-slider"]', {
+    const swiperReviews = new Swiper('[data-slider="reviews-slider"]', {
       navigation: {
         nextEl: '.reviews__button--next',
         prevEl: '.reviews__button--prev',
@@ -12,6 +11,8 @@ const initSwiperReviews = (swiper) => {
 
       initialSlide: 0,
     });
+
+    swiperReviews.init();
   }
 };
 

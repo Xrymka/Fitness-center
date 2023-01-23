@@ -15,6 +15,7 @@
   @include vp-767 {
     align-items: center;
     flex-direction: column;
+    gap: 0;
     padding-left: 46px;
     padding-right: 46px;
   }
@@ -66,6 +67,10 @@
 .advantages-card__description {
   margin: 0;
   font-weight: 300;
+
+  @include vp-767 {
+    line-height: 22px;
+  }
 }
 
 .advantages-card__subtitle {
@@ -123,7 +128,7 @@
     width: 100%;
     grid-column: initial;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding: 38px 60px 42px;
   }
 }
@@ -159,5 +164,11 @@
 
   @include vp-767 {
     margin-top: -5px;
+  }
+}
+
+.advantages-card--main .advantages-card__description {
+  @include vp-767 {
+    line-height: 24px;
   }
 }

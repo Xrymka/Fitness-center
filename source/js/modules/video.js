@@ -1,7 +1,7 @@
 const videoEnabled = () => {
   const video = document.querySelector('.video');
   const button = video.querySelector('.video__btn');
-  button.removeAttribute('disabled');
+  button.removeAttribute('href');
 
   function createIframe() {
     const iframe = document.createElement('iframe');
