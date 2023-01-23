@@ -1,6 +1,4 @@
 build/*.js
 source/js/vendor/*.js
-source/js/modules/reviews-slider.js
-source/js/modules/trainers-slider.js
 gulpfile.js
 webpack.config.cjs

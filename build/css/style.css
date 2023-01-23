@@ -1328,6 +1328,10 @@ body {
 a {
   color: #102654;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 img,
@@ -1434,6 +1438,10 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page {
@@ -1539,6 +1547,10 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #ffffff;
   background-color: transparent;
   border: none;

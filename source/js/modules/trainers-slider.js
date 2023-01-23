@@ -1,7 +1,11 @@
+import Swiper, {Navigation} from 'swiper';
+
 const initSwiperTrainer = (swiper) => {
 
   if (swiper) {
     const swiperTrainers = new Swiper('[data-slider="trainers-slider"]', {
+      modules: [Navigation],
+
       navigation: {
         nextEl: '.trainers__button--next',
         prevEl: '.trainers__button--prev',
