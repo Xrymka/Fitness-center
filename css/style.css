@@ -1914,7 +1914,7 @@ button,
   border-radius: 50%;
   border: 0;
   background: 0 0;
-  background-image: url("../../img/svg/icon-button-play-video.svg");
+  background-image: url("../img/svg/icon-button-play-video.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -2176,7 +2176,7 @@ button,
   content: "";
   width: 32px;
   height: 40px;
-  background: url("../../img/svg/icon-ruble.svg") no-repeat center bottom;
+  background: url("../img/svg/icon-ruble.svg") no-repeat center bottom;
 }
 
 .card a {
@@ -4451,6 +4451,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .subscription::before {
-    background-image: url("../../img/subscription.png");
+    background-image: url("../img/subscription.png");
   }
 }
