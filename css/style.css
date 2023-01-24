@@ -2325,10 +2325,6 @@ button,
   object-fit: cover;
 }
 
-.slider {
-  overflow: hidden;
-}
-
 .slider__wrapper {
   position: relative;
   width: 100%;
@@ -2362,19 +2358,23 @@ button,
 
 .slider__trainer {
   position: relative;
+  width: 100%;
 }
 
 .slider__trainer:hover .slider__img-overlay,
+.slider__trainer:focus .slider__img-overlay,
 .slider__trainer:focus-within .slider__img-overlay {
   z-index: 5;
 }
 
 .slider__trainer:hover .slider__name-trainer,
+.slider__trainer:focus .slider__name-trainer,
 .slider__trainer:focus-within .slider__name-trainer {
   z-index: -1;
 }
 
 .slider__trainer:hover .slider__image,
+.slider__trainer:focus .slider__image,
 .slider__trainer:focus-within .slider__image {
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
   -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -2980,7 +2980,7 @@ button,
 }
 
 .free-class {
-  padding: 64px 170px 70px 0;
+  padding: 64px 170px 64px 0;
 }
 
 .free-class__title {
@@ -3064,7 +3064,7 @@ button,
 }
 
 .contacts {
-  padding: 56px 0 65px 120px;
+  padding: 56px 0 64px 120px;
 }
 
 .contacts__title {
@@ -3185,7 +3185,7 @@ button,
 }
 
 .footer {
-  padding: 41px 0 25px;
+  padding: 41px 0 29px;
   color: #ffffff;
   background-color: #030a1a;
 }
@@ -3953,6 +3953,7 @@ button,
 
   .about__video {
     position: relative;
+    bottom: initial;
     left: initial;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
