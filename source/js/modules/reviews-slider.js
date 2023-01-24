@@ -1,10 +1,10 @@
 
-import Swiper, {Navigation} from 'swiper';
+import Swiper, {Navigation, A11y} from 'swiper';
 
 const initSwiperReviews = (swiper) => {
   if (swiper) {
     const swiperReviews = new Swiper('[data-slider="reviews-slider"]', {
-      modules: [Navigation],
+      modules: [Navigation, A11y],
 
       navigation: {
         nextEl: '.reviews__button--next',

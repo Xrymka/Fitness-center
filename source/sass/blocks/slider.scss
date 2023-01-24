@@ -1,6 +1,4 @@
 .slider {
-  overflow: hidden;
-
   @include vp-1199 {
     margin: 0 56px;
   }
@@ -39,18 +37,22 @@
 
 .slider__trainer {
   position: relative;
+  width: 100%;
 
   &:hover .slider__img-overlay,
+  &:focus .slider__img-overlay,
   &:focus-within .slider__img-overlay {
     z-index: 5;
   }
 
   &:hover .slider__name-trainer,
+  &:focus .slider__name-trainer,
   &:focus-within .slider__name-trainer {
     z-index: -1;
   }
 
   &:hover .slider__image,
+  &:focus .slider__image,
   &:focus-within .slider__image {
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
