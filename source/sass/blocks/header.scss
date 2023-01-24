@@ -49,11 +49,17 @@
   }
 }
 
+.header__logo {
+  display: flex;
+  padding-top: 10px;
+}
+
 .header__logo,
 .header__logo svg {
   @include vp-1199 {
     width: 82px;
     height: 17px;
+    padding-top: 0;
   }
 
   @include vp-767 {

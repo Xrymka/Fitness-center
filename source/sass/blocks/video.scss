@@ -21,6 +21,10 @@
     }
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:hover .video__btn {
     transform: translate(-50%, -50%) scale(1.2);
   }
@@ -58,7 +62,7 @@
   border-radius: 50%;
   border: 0;
   background: 0 0;
-  background-image: url("../../img/svg/icon-button-play-video.svg");
+  background-image: url("../img/svg/icon-button-play-video.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
